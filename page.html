@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Enactus ISIMG — Club Officiel</title>
+  <meta name="description" content="Site officiel du club Enactus ISIMG — Innover, créer, impacter ensemble." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#fbbf24; /* Enactus yellow */
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,Arial,sans-serif;
+      background:linear-gradient(180deg,var(--bg) 0%, #071025 100%);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.5;
+    }
+    .container{max-width:var(--maxw);margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#f59e0b);display:flex;align-items:center;justify-content:center;font-weight:800;color:#0f1724}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:white}
+    h1,h2,h3{margin:0 0 12px}
+    /* Hero */
+    .hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:64px 0}
+    .hero h1{font-size:42px;color:white}
+    .hero p{color:var(--muted);max-width:640px}
+    /* Team Section */
+    .team{margin-top:60px}
+    .grid-team{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:20px;
+      margin-top:24px;
+    }
+    .member{
+      background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.05);
+      border-radius:16px;
+      padding:16px;
+      text-align:center;
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .member:hover{transform:translateY(-4px);box-shadow:0 6px 20px rgba(0,0,0,0.3);}
+    .member img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      border-radius:12px;
+      margin-bottom:12px;
+    }
+    .member h4{margin:0;color:white;font-weight:700}
+    .member p{margin:4px 0;color:var(--muted);font-size:14px}
+    .socials{display:flex;justify-content:center;gap:10px;margin-top:8px}
+    .socials a{
+      color:var(--accent);
+      text-decoration:none;
+      font-size:18px;
+      transition:color .2s;
+    }
+    .socials a:hover{color:white}
+    footer{
+      padding:28px 0;
+      color:var(--muted);
+      font-size:13px;
+      border-top:1px solid rgba(255,255,255,0.02);
+      margin-top:36px;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">E</div>
+        <div>
+          <div style="font-weight:700">Enactus ISIMG</div>
+          <div style="font-size:12px;color:var(--muted)">Innover · Créer · Impacter</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#team">Notre Équipe</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Bienvenue sur le site officiel d’Enactus ISIMG</h1>
+        <p>Nous sommes une communauté d’étudiants engagés à créer un impact positif à travers l’entrepreneuriat social et l’innovation durable.</p>
+        <div style="margin-top:16px;color:var(--muted)">
+          <strong>Contact :</strong> enactus@isimg.tn · 
+          <a href="https://www.facebook.com/profile.php/?id=61570242411845" target="_blank" style="color:var(--accent);text-decoration:none;">Facebook</a> · 
+          <a href="#" target="_blank" style="color:var(--accent);text-decoration:none;">Instagram</a>
+        </div>
+      </section>
+
+      <section id="team" class="team">
+        <h2>Notre Équipe</h2>
+        <div class="grid-team">
+
+          <!-- 16 Member Cards -->
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+1"><h4>Ghofran</h4><p>membre1@email.com</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre1@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+2"><h4>Jihen Hamdi</h4><p>membre2@email.com</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre2@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+3"><h4>Nahla ben yahya"</h4><p>nbynahla@isimg.tn</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre3@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+4"><h4>Elbekri oussama</h4><p>elbekrioussam12@gmail.com</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre4@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+5"><h4>Dhia ben saleh</h4><p>dhia.bensalha@isimg.tn</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre5@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+6"><h4>Arij Ganfoudi</h4><p>arij.ganfoudi@isimg.tn</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre6@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+7"><h4>Hela lakhdher</h4><p>membre7@email.com</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre7@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+8"><h4>Sahar Zarai</h4><p>membre8@email.com</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre8@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+9"><h4>Mohamed Houssem ben  Aifa</h4><p>mouhamedhoucem.benaifa@isimg.tn</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre9@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+10"><h4>Nacer Zidi</h4><p>naceur.zidi@isimg.tn</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre10@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+11"><h4>Hamza miled</h4><p>hamza.miled@isimg.tn</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre11@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+12"><h4>Moeatez Marrach</h4><p>moeter.meraach@isimg.tn</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre12@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+13"><h4>Mohamed yahya</h4><p>membre13@email.com</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre13@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+14"><h4>Balkis thabti</h4><p>membre14@email.com</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre14@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+15"><h4>Islem mabrouk</h4><p>islem.mabrouk@isimg.tn</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre15@email.com">✉️</a></div></div>
+          <div class="member"><img src="https://via.placeholder.com/300x220.png?text=Membre+16"><h4>Mohamed Al Amin Aloun</h4><p>membre16@email.com</p><div class="socials"><a href="#">📸</a><a href="#">📘</a><a href="mailto:membre16@email.com">✉️</a></div></div>
+          
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 Enactus ISIMG — Tous droits réservés
+    </footer>
+  </div>
+</body>
+</html>
